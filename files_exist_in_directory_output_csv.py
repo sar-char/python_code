@@ -1,9 +1,16 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-Created on Sat May 16 15:07:36 2020
 
-@author: sarah
 """
+__author__ = 'Sarah Chapman'
+__credits__ = ['Sarah Chapman']
+__license__ = 'MPL 2.0'
+__version__ = '0.1.0'
+__maintainer__ = 'Sarah Chapman'
+__status__ = 'Production'
+__description__='Check if a list of filenames exist in a directory'
+"""
+
 #Compare files in directory to spreadsheet
 
 #Import Packages
