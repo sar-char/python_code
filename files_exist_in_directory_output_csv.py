@@ -13,27 +13,25 @@ import csv
 
 path=r'C:\Users\sarah\.spyder-py3'
 file=r'C:\Users\sarah\.spyder-py3\list.csv'
-new=r'C:\Users\sarah\.spyder-py3\output.csv'
+new=r'C:\Users\sarah\.spyder-py3\output1.csv'
 
 #Read in CSV File
 list=pd.read_csv(file, header=None,skiprows=[0], dtype=str, names=['File'],usecols=[0], squeeze=True)
 print(list)
 
-# Create a workbook and add a worksheet.
-with open(new, 'w', newline='') as f:
-    writer = csv.writer(f)
+# Create csv file
+f=open(new, 'w', newline='')
+writer = csv.writer(f)
     
 #Check if each file exists or not
 for files in list:
    dir=os.path.join(path,files)
    if os.path.exists(dir):
-       #print(dir,'exists')
-       exists=dir+'exists'
-       #writer.writerow(files)
+       exists=dir+' exists'
+       writer.writerow([exists])
    else:
-       #print(dir,'not exists')
-       notexists=dir+'not exists'
-       writer.writerow([exists, notexists])
+       notexists=dir+' not exists'
+       writer.writerow([notexists])
        
 #Ouput results to csv
-#file.close()
+f.close()
