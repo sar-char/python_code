@@ -1,15 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Owned
-from nostalgia_util import log_utils
-from nostalgia_util import settings_util
+"""
 __author__ = 'Sarah Chapman'
 __credits__ = ['Sarah Chapman']
-#__license__ = 'MPL 2.0'
+__license__ = 'MPL 2.0'
 __version__ = '0.1.0'
 __maintainer__ = 'Sarah Chapman'
 __status__ = 'Production'
+"""
 
 #Import Packages
 import os
