@@ -7,6 +7,7 @@
 #Popular Packages used include pandas, numpy, os, matplotlib. 
 
 Contents
-  export_directory_contents - lists root, directory and files to a csv file. 
-
+#export_directory_contents - lists root, directory and files to a csv file. 
+#files_exist_in_directory - 
+#files_exist_in_directory_output_csv - ***Amend to search across folders, subfolders
 
